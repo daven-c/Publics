@@ -3,7 +3,6 @@ from itertools import product
 import time
 import pygame
 from typing import *
-from collections import namedtuple
 
 
 def memoize(func):  # Example memoize wrapper
