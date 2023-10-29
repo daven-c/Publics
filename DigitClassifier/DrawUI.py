@@ -6,6 +6,13 @@ import pygame
 import numpy as np
 from abc import ABC
 
+
+def get_reqs(package_names: list[str]):
+    from importlib.metadata import version
+    for package in package_names:
+        print(f"{package}=={version(package)}")
+
+
 WHITE = (255, 255, 255)
 BLACK = (50, 50, 50)
 GREEN = (0, 255, 0)
