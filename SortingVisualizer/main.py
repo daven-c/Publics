@@ -2,6 +2,7 @@ from VisualPyGame import Visualizer
 
 
 if __name__ == "__main__":
+    # Available sorters: bubble, insertion, merge, selection
     methods = Visualizer.getMethods()
     print("Available sorters: ", ", ".join(methods), sep="")
 
