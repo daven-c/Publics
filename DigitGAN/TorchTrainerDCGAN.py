@@ -77,8 +77,8 @@ if __name__ == "__main__":
             batch_images = images.view(-1, 28, 28)  # Ensure 28 x 28
             class_labels = multi_one_hot_label(
                 labels)  # hot encodes class labels
-            real_labels = torch.ones('curr_batch_size)
-            fake_labels = torch.zeros('curr_batch_size)
+            real_labels = torch.ones(curr_batch_size)
+            fake_labels = torch.zeros(curr_batch_size)
 
             # Train the generator
             generator.optimizer.zero_grad()
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
             # Train the generator
             generator.optimizer.zero_grad()
-            real_labels = torch.ones('curr_batch_size)
+            real_labels = torch.ones(curr_batch_size)
             fake_images = generator(rdn_noise, class_labels)
             gan_loss = gan_criterion(discriminator(
                 fake_images, class_labels), real_labels)
