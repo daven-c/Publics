@@ -1,14 +1,17 @@
 # Instructions
 
-## Hyperparameters
+## 1. Hyperparameters and Models
 
 Adjust values in settings.cfg
+Tune model parameters in TorchModels.py
+Change model hidden layer size where model instantiation occurs in the trainer.py files
 
-## Training
+## 2. Training
 
 Option 1: TorchTrainerDCGAN.py, trains a deep convolutional model
 Option 2: TorchTrainer.py, trains a deep neural network model
 
-## Viewing Results
+## 3. Viewing Results
 
-Use ViewResults.py by passing the model into the filename variable
+First, rename the best epoch model to GenModel.pth, delete other models if you wish
+Next set the filename variable in ViewResults.py to the model folder, and run
