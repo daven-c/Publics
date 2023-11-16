@@ -5,7 +5,7 @@ from torch import nn
 import torchvision
 import torchvision.transforms as transforms
 from torchsummary import summary
-from loadmain import *
+from ViewResults import *
 from datetime import datetime
 import os
 import shutil

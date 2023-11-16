@@ -1,8 +1,8 @@
-# Directions
+## Directions
 
 Run main.py
 
-# Controls
+## Controls
 
 Space to run,
 Backspace to restart,

@@ -4,7 +4,7 @@ import torch
 from torch import nn
 import torchvision
 import torchvision.transforms as transforms
-from loadmain import *
+from ViewResults import *
 from datetime import datetime
 import os
 import shutil
@@ -68,6 +68,7 @@ if __name__ == "__main__":
         print("Epoch:", epoch)
         start_time = time.time()
         for batch, (images, labels) in enumerate(dataloader):
+            print(batch)
 
             curr_batch_size = images.shape[0]
 
