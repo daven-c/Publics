@@ -1,0 +1,1 @@
+print(generated_image.shape)
